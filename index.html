@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book shop</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <section class="product_filters">
+        <div class="product_filters__content">
+            <button class="product_filters__content-button" data-type="all">All</button>
+            <button class="product_filters__content-button" data-type="favorite">Favourites</button>
+            <button class="product_filters__content-button" data-type="compare">Comparison</button>
+            <div class="product_filters__content-checkbox">
+                <label class="show_hidden_checkbox">
+                    <input class="show_hidden_checkbox__input" type="checkbox"/>
+                    <span class="show_hidden_checkbox__checkmark">
+                        <i class="fa fa-check show_hidden_check"></i>
+                    </span>
+                    Show hidden
+                </label>
+            </div>
+        </div>
+    </section>
+    <section class="product_list">
+        <div class="product" id="1">
+            <div class="product__cell">
+                <div class="product__content">
+                    <div class="product__content-icons">
+                        <button class="product__content-product_icon icon_hidden">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_favorite">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_compare">
+                            <i class="fa fa-balance-scale"></i>
+                        </button>
+                    </div>
+                    <div class="product__content-new_label">
+                        New
+                    </div>
+                    <p class="product__content-image">
+                        <img src="resources/dune.jpeg" alt=""/>
+                    </p>
+                    <p class="product__content-author">
+                        Frank Herbert
+                    </p>
+                    <div class="product__content-rating">
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted star-width-40"></i>
+                        </i>
+                    </div>
+                    <p class="product__content-name">
+                        Dune
+                    </p>
+                    <div class="product__content-price">
+                        <p class="product__content-price_value">
+                            $15
+                        </p>
+                    </div>
+                </div>
+                <button class="product__add_to_cart">
+                    <i class="fa fa-shopping-bag bag-icon"></i>Add to cart
+                </button>
+            </div>
+        </div>
+        <div class="product" id="2">
+            <div class="product__cell">
+                <div class="product__content">
+                    <div class="product__content-icons">
+                        <div class="product__content-product_icon icon_hidden">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                        <div class="product__content-product_icon icon_favorite">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div class="product__content-product_icon icon_compare">
+                            <i class="fa fa-balance-scale"></i>
+                        </div>
+                    </div>
+                    <div class="product__content-new_label hidden_label">
+                        New
+                    </div>
+                    <p class="product__content-image">
+                        <img src="resources/greenMile.jpg" alt=""/>
+                    </p>
+                    <p class="product__content-author">
+                        Stephen King
+                    </p>
+                    <div class="product__content-rating">
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted star-width-70"></i>
+                        </i>
+                    </div>
+                    <p class="product__content-name">
+                        Green Mile
+                    </p>
+                    <div class="product__content-price">
+                        <p class="product__content-price_value sale-price">
+                            $10
+                        </p>
+                        <p class="product__content-price_value old-price">
+                            $15
+                        </p>
+                    </div>
+                </div>
+                <button class="product__add_to_cart">
+                    <i class="fa fa-shopping-bag bag-icon"></i>Add to cart
+                </button>
+            </div>
+        </div>
+        <div class="product" id="3">
+            <div class="product__cell">
+                <div class="product__content">
+                    <div class="product__content-icons">
+                        <div class="product__content-product_icon icon_hidden">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                        <div class="product__content-product_icon icon_favorite">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div class="product__content-product_icon icon_compare">
+                            <i class="fa fa-balance-scale"></i>
+                        </div>
+                    </div>
+                    <div class="product__content-new_label">
+                        New
+                    </div>
+                    <p class="product__content-image">
+                        <img src="resources/aBriefHistoryOfTime.jpg" alt=""/>
+                    </p>
+                    <p class="product__content-author">
+                        Stephen Hawking
+                    </p>
+                    <div class="product__content-rating">
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted star-width-70"></i>
+                        </i>
+                    </div>
+                    <p class="product__content-name">
+                        A Brief History of Time
+                    </p>
+                    <div class="product__content-price">
+                        <p class="product__content-price_value sale-price">
+                            $20
+                        </p>
+                        <p class="product__content-price_value old-price">
+                            $25
+                        </p>
+                    </div>
+                </div>
+                <button class="product__add_to_cart">
+                    <i class="fa fa-shopping-bag bag-icon"></i>Add to cart
+                </button>
+            </div>
+        </div>
+        <div class="product" id="4">
+            <div class="product__cell">
+                <div class="product__content">
+                    <div class="product__content-icons">
+                        <button class="product__content-product_icon icon_hidden">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_favorite">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_compare">
+                            <i class="fa fa-balance-scale"></i>
+                        </button>
+                    </div>
+                    <div class="product__content-new_label hidden_label">
+                        New
+                    </div>
+                    <p class="product__content-image">
+                        <img src="resources/eugeneOnegin.jpg" alt=""/>
+                    </p>
+                    <p class="product__content-author">
+                        Alexander Pushkin
+                    </p>
+                    <div class="product__content-rating">
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted star-width-40"></i>
+                        </i>
+                    </div>
+                    <p class="product__content-name">
+                        Eugene Onegin
+                    </p>
+                    <div class="product__content-price">
+                        <p class="product__content-price_value">
+                            $15
+                        </p>
+                    </div>
+                </div>
+                <button class="product__add_to_cart">
+                    <i class="fa fa-shopping-bag bag-icon"></i>Add to cart
+                </button>
+            </div>
+        </div>
+        <div class="product" id="5">
+            <div class="product__cell">
+                <div class="product__content">
+                    <div class="product__content-icons">
+                        <button class="product__content-product_icon icon_hidden">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_favorite">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_compare">
+                            <i class="fa fa-balance-scale"></i>
+                        </button>
+                    </div>
+                    <div class="product__content-new_label hidden_label">
+                        New
+                    </div>
+                    <p class="product__content-image">
+                        <img src="resources/fightClub.jpg" alt=""/>
+                    </p>
+                    <p class="product__content-author">
+                        Chuck Palahniuk
+                    </p>
+                    <div class="product__content-rating">
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted star-width-40"></i>
+                        </i>
+                    </div>
+                    <p class="product__content-name">
+                        Fight Club
+                    </p>
+                    <div class="product__content-price">
+                        <p class="product__content-price_value">
+                            $10
+                        </p>
+                    </div>
+                </div>
+                <button class="product__add_to_cart">
+                    <i class="fa fa-shopping-bag bag-icon"></i>Add to cart
+                </button>
+            </div>
+        </div>
+        <div class="product" id="6">
+            <div class="product__cell">
+                <div class="product__content">
+                    <div class="product__content-icons">
+                        <button class="product__content-product_icon icon_hidden">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_favorite">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_compare">
+                            <i class="fa fa-balance-scale"></i>
+                        </button>
+                    </div>
+                    <div class="product__content-new_label hidden_label">
+                        New
+                    </div>
+                    <p class="product__content-image">
+                        <img src="resources/masterAndMargarita.jpg" alt=""/>
+                    </p>
+                    <p class="product__content-author">
+                        Mikhail Bulgakov
+                    </p>
+                    <div class="product__content-rating">
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted star-width-40"></i>
+                        </i>
+                    </div>
+                    <p class="product__content-name">
+                        Master and Margarita
+                    </p>
+                    <div class="product__content-price">
+                        <p class="product__content-price_value">
+                            $20
+                        </p>
+                    </div>
+                </div>
+                <button class="product__add_to_cart">
+                    <i class="fa fa-shopping-bag bag-icon"></i>Add to cart
+                </button>
+            </div>
+        </div>
+        <div class="product" id="7">
+            <div class="product__cell">
+                <div class="product__content">
+                    <div class="product__content-icons">
+                        <button class="product__content-product_icon icon_hidden">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_favorite">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_compare">
+                            <i class="fa fa-balance-scale"></i>
+                        </button>
+                    </div>
+                    <div class="product__content-new_label">
+                        New
+                    </div>
+                    <p class="product__content-image">
+                        <img src="resources/theHoundOfTheBaskervilles.jpg" alt=""/>
+                    </p>
+                    <p class="product__content-author">
+                        Arthur Conan Doyle
+                    </p>
+                    <div class="product__content-rating">
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted star-width-40"></i>
+                        </i>
+                    </div>
+                    <p class="product__content-name">
+                        The Hound of The Baskervilles
+                    </p>
+                    <div class="product__content-price">
+                        <p class="product__content-price_value sale-price">
+                            $20
+                        </p>
+                        <p class="product__content-price_value old-price">
+                            $25
+                        </p>
+                    </div>
+                </div>
+                <button class="product__add_to_cart">
+                    <i class="fa fa-shopping-bag bag-icon"></i>Add to cart
+                </button>
+            </div>
+        </div>
+        <div class="product" id="8">
+            <div class="product__cell">
+                <div class="product__content">
+                    <div class="product__content-icons">
+                        <button class="product__content-product_icon icon_hidden">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_favorite">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_compare">
+                            <i class="fa fa-balance-scale"></i>
+                        </button>
+                    </div>
+                    <div class="product__content-new_label">
+                        New
+                    </div>
+                    <p class="product__content-image">
+                        <img src="resources/theOldManAndTheSea.jpg" alt=""/>
+                    </p>
+                    <p class="product__content-author">
+                        Ernest Hemingway
+                    </p>
+                    <div class="product__content-rating">
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted star-width-40"></i>
+                        </i>
+                    </div>
+                    <p class="product__content-name">
+                        The Old Man and The Sea
+                    </p>
+                    <div class="product__content-price">
+                        <p class="product__content-price_value">
+                            $20
+                        </p>
+                    </div>
+                </div>
+                <button class="product__add_to_cart">
+                    <i class="fa fa-shopping-bag bag-icon"></i>Add to cart
+                </button>
+            </div>
+        </div>
+        <div class="product" id="9">
+            <div class="product__cell">
+                <div class="product__content">
+                    <div class="product__content-icons">
+                        <button class="product__content-product_icon icon_hidden">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_favorite">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_compare">
+                            <i class="fa fa-balance-scale"></i>
+                        </button>
+                    </div>
+                    <div class="product__content-new_label hidden_label">
+                        New
+                    </div>
+                    <p class="product__content-image">
+                        <img src="resources/threeComrades.jpg" alt=""/>
+                    </p>
+                    <p class="product__content-author">
+                        Erich Maria Remarque
+                    </p>
+                    <div class="product__content-rating">
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted star-width-40"></i>
+                        </i>
+                    </div>
+                    <p class="product__content-name">
+                        Three Comrades
+                    </p>
+                    <div class="product__content-price">
+                        <p class="product__content-price_value">
+                            $10
+                        </p>
+                    </div>
+                </div>
+                <button class="product__add_to_cart">
+                    <i class="fa fa-shopping-bag bag-icon"></i>Add to cart
+                </button>
+            </div>
+        </div>
+        <div class="product" id="10">
+            <div class="product__cell">
+                <div class="product__content">
+                    <div class="product__content-icons">
+                        <button class="product__content-product_icon icon_hidden">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_favorite">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_compare">
+                            <i class="fa fa-balance-scale"></i>
+                        </button>
+                    </div>
+                    <div class="product__content-new_label hidden_label">
+                        New
+                    </div>
+                    <p class="product__content-image">
+                        <img src="resources/warAndPeace.jpg" alt=""/>
+                    </p>
+                    <p class="product__content-author">
+                        Leo Tolstoy
+                    </p>
+                    <div class="product__content-rating">
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted star-width-40"></i>
+                        </i>
+                    </div>
+                    <p class="product__content-name">
+                        War and Peace
+                    </p>
+                    <div class="product__content-price">
+                        <p class="product__content-price_value">
+                            $30
+                        </p>
+                    </div>
+                </div>
+                <button class="product__add_to_cart">
+                    <i class="fa fa-shopping-bag bag-icon"></i>Add to cart
+                </button>
+            </div>
+        </div>
+        <div class="product" id="11">
+            <div class="product__cell">
+                <div class="product__content">
+                    <div class="product__content-icons">
+                        <button class="product__content-product_icon icon_hidden">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_favorite">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <button class="product__content-product_icon icon_compare">
+                            <i class="fa fa-balance-scale"></i>
+                        </button>
+                    </div>
+                    <div class="product__content-new_label hidden_label">
+                        New
+                    </div>
+                    <p class="product__content-image">
+                        <img src="resources/whiteFang.jpg" alt=""/>
+                    </p>
+                    <p class="product__content-author">
+                        Jack London
+                    </p>
+                    <div class="product__content-rating">
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted"></i>
+                        </i>
+                        <i class="fa fa-star star-grayed-out">
+                            <i class="fa fa-star star-highlighted star-width-40"></i>
+                        </i>
+                    </div>
+                    <p class="product__content-name">
+                        White Fang
+                    </p>
+                    <div class="product__content-price">
+                        <p class="product__content-price_value sale-price">
+                            $10
+                        </p>
+                        <p class="product__content-price_value old-price">
+                            $15
+                        </p>
+                    </div>
+                </div>
+                <button class="product__add_to_cart">
+                    <i class="fa fa-shopping-bag bag-icon"></i>Add to cart
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+<script src="js/localStorage.js"></script>
+<script src="js/main.js"></script>
+</html>
