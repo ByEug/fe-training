@@ -1,9 +1,9 @@
 const products = document.querySelectorAll('.product');
 
 function updateProductsOnLoad() {
-    let favoriteList = new ProductList('favorite').getProductList();
-    let hiddenList = new ProductList('hidden').getProductList();
-    let compareList = new ProductList('compare').getProductList();
+    let favoriteList = new ProductList('favorite').productList;
+    let hiddenList = new ProductList('hidden').productList;
+    let compareList = new ProductList('compare').productList;
     products.forEach((product) => {
         if (favoriteList.includes(product.id)) {
             product.querySelector('.icon_favorite').classList.add('product_icon_active');

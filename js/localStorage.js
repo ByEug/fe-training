@@ -5,7 +5,7 @@ class ProductList {
         this.#productList = localStorage.getItem(listName) ? localStorage.getItem(listName).split(',') : [];
     }
 
-    getProductList() {
+    get productList() {
         return this.#productList;
     }
 
